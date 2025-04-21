@@ -1,0 +1,19 @@
+
+services:
+  db:
+    image: postgres:15
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: user_marketplace
+      POSTGRES_PASSWORD: password_marketplace
+      POSTGRES_DB: marketplace_db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
+
+networks:
+  backenf_network:
+    driver: bridge
