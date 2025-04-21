@@ -11,4 +11,5 @@
   "jsxSingleQuote": false,
   "quoteProps": "as-needed",
   "singleAttributePerLine": false
+  "trailingComma": "all"
 }

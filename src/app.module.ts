@@ -6,6 +6,10 @@ import { ProductsModule } from './products/products.module';
 
 @Module({
   imports: [UsersModule, ProductsModule],
+
+@Module({
+  imports: [UsersModule],
+
   controllers: [AppController],
   providers: [AppService],
 })
